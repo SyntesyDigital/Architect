@@ -1,0 +1,196 @@
+body {
+    background-color: $cms-light-color-1;
+}
+
+#wrapper {
+    position: relative;
+    height: 100%;
+}
+
+.container {
+  width:100% !important;
+
+  &-error {
+      clear:both;
+      margin-top: 90px;
+      border-radius: 5px;
+  }
+}
+
+#main {
+    .navbar-collapse {
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        -webkit-box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+        box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav,
+    .nav a,
+    .nav li a {
+        color: #fff;
+    }
+
+    .nav a:hover {
+        background-color: none;
+    }
+
+    #content {
+
+    }
+}
+$sidebar-width: 0;
+$header-height: 70px;
+
+.text-warning {
+    color: #f3b360;
+}
+
+.cke_textarea_inline {
+    @extend .form-control;
+    height: auto;
+}
+
+section#main {
+    margin-left: $sidebar-width;
+    z-index: 0;
+}
+
+
+.form-container {
+    padding: 40px;
+}
+
+section#content {
+
+    button.btn {
+        @extend .rounded;
+    }
+
+    .header {
+        padding: 40px 70px 10px;
+
+        h1 {
+            display: inline-block;
+            padding-right: 20px;
+            vertical-align: top;
+            font-size: 30px;
+            line-height: 42px;
+        }
+
+        .actions {
+            position: absolute;
+            top: 55px;
+            right: 70px;
+
+            .dropdown-menu {
+                top: 55px;
+
+                li a {
+                    background-color: transparent;
+                    color: $cms-dark-color-2;
+                    padding-left: 29px;
+
+                    &:hover {
+                        background-color: transparent;
+                        border: none;
+                        color: $cms-color-1;
+                        box-shadow: none;
+                    }
+
+                    .fa {
+                        position: absolute;
+                        top: 14px;
+                        left: 12px;
+                    }
+                }
+            }
+
+            .btn-status {
+                background-color: transparent;
+                color: $cms-dark-color-1;
+                border: 1px solid $cms-light-color-4;
+                padding-left: 45px;
+                text-transform: initial;
+
+                .caret {
+                    margin-left: 5px;
+                }
+
+                .fa {
+                    position: absolute;
+                    top: 15px;
+                    left: 16px;
+                }
+            }
+        }
+
+        .input-search {
+            display: inline-table;
+            width: 240px;
+            vertical-align: top;
+
+            i {
+                color: $cms-dark-color-2;
+            }
+        }
+
+        .btn-primary {
+            float: right;
+            right: 0;
+            bottom: 0;
+            margin-top: 26px;
+
+            i {
+                font-size: 16px;
+                padding-right: 7px;
+            }
+        }
+    }
+
+    .nav {
+        padding: 0 70px;
+    }
+
+    .body {
+        padding: 30px 70px 70px;
+    }
+}
+
+
+.bootstrap-select {
+    .dropdown-menu {
+        ul.dropdown-menu {
+            li {
+                &.active a {
+                    color: $cms-color-1;
+                    background-color: transparent;
+                    box-shadow: none;
+                }
+
+                a {
+                    &:active,
+                    &:focus,
+                    &:hover {
+                        color: $cms-color-1;
+                        background-color: transparent;
+                        box-shadow: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.floating-btn{
+    position:fixed;
+    bottom:40px;
+    right:40px;
+}
+
+#logo-wrapper img {
+  /*max-width: 287px;*/
+  height: 100%;
+  width: auto !important;
+}

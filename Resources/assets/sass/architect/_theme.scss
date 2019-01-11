@@ -1,0 +1,85 @@
+$theme-primary : #fe0401;
+
+$theme-topbar : #373737;
+$theme-topbar-color: #fff;
+$theme-topbar-hover: #ff403d;
+
+$theme-topbar-right-background : #373737;
+$theme-topbar-right-hover : #252525;
+
+$theme-sidebar : #dadada;
+$theme-sidebar-hover : #bcbcbc;
+$theme-sidebar-icon : #c76164;
+
+/*
+header .topnav {
+  box-shadow : none !important;
+}
+*/
+
+header .topnav .topnav-top {
+    background-color: $theme-topbar;
+
+}
+
+nav.main-nav ul li.active a {
+  color: $theme-topbar-hover;
+  border-bottom: 3px solid $theme-topbar-hover;
+}
+
+nav.main-nav ul li a {
+  color: $theme-topbar-color;
+
+  &:hover {
+    color: $theme-topbar-hover;
+    border-bottom: 3px solid $theme-topbar-hover;
+  }
+
+}
+
+#main header .topbar-right {
+    background-color: $theme-topbar-right-background;
+}
+
+#main .nav, #main .nav a, #main .nav li a {
+    color: $theme-topbar-color;
+}
+
+#main header .topbar-right .navbar-collapse .nav a:hover, #main header .topbar-right .navbar-collapse .nav a:active, #main header .topbar-right .navbar-collapse .nav a:focus {
+    background-color: $theme-topbar-right-hover !important;
+}
+
+#main header .topbar-right .navbar-collapse .dropdown.open a.dropdown-toggle {
+    background-color: $theme-topbar-right-hover !important;
+}
+
+#main header .topbar-right .navbar-nav > li > .dropdown-menu {
+    background-color: $theme-topbar-right-hover !important;
+
+    a i {
+      color:#fff;
+    }
+
+    a:hover {
+        color: $theme-topbar-hover;
+
+        i {
+          color: $theme-topbar-hover;
+        }
+
+    }
+}
+
+.leftbar-page .sidebar {
+  background-color: $theme-sidebar;
+}
+
+.leftbar-page .sidebar ul li:hover a, .leftbar-page .sidebar ul li.active a {
+  background-color: $theme-sidebar-hover;
+  border-left: 3px solid $theme-primary;
+
+  i {
+    color: $theme-sidebar-icon;
+  }
+
+}

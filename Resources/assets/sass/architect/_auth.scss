@@ -1,0 +1,35 @@
+section#wrapper.auth {
+    section#header {
+        height: 40px;
+    }
+
+    section#content {
+        text-align: center;
+
+        .panel-body {
+            padding: 0 70px;
+        }
+
+        .input-group {
+            i {
+                font-size: 20px;
+            }
+
+            input {
+                top: 10px;
+            }
+        }
+    }
+}
+
+.login {
+    .btn-primary {
+        display: block;
+        margin: 0 auto 10px;
+    }
+
+    .actions {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}

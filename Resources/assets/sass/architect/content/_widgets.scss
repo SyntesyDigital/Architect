@@ -1,0 +1,106 @@
+.widget-item {
+
+  .field-item {
+    border-left:2px solid #ccc;
+    margin-bottom: 20px;
+
+    .field-name{
+      line-height: 45px;
+      text-align: left;
+      padding-left: 30px;
+    }
+
+    .field-image{
+      width: 44px;
+      height: 44px;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+      left: 8px;
+      float:left;
+    }
+
+    button.btn,div.btn{
+
+      display: block;
+      width: 100%;
+      text-align: left;
+      border: 1px solid #ccc;
+      border-radius: 0px !important;
+      background-color: $cms-light-color-6;
+      text-decoration: none;
+      margin: 0;
+
+      &:not(.collapsed):before {
+          content: "▾";
+          margin-right: 0px;
+          position: absolute;
+          top: 9px;
+          right: 19px;
+          font-size: 18px;
+          color:$text-color;
+      }
+      &.collapsed:before {
+          content: "▸";
+          margin-right: 0px;
+          position: absolute;
+          top: 9px;
+          right: 19px;
+          font-size: 18px;
+          color:$text-color;
+      }
+
+      .field-type{
+        i{
+          position: relative;
+          font-size: 22px;
+          padding-right: 10px;
+          color: #a0a6a9;
+        }
+
+        color: #a0a6a9;
+        text-transform: capitalize;
+
+        padding-right: 10px;
+        border-right:1px solid #ccc;
+      }
+
+      .field-name {
+        color:$text-color;
+        padding-left: 10px;
+        text-transform: capitalize;
+        @include font(18,20,400);
+      }
+
+    }
+
+    .ql-editor{
+      height:100px;
+    }
+
+    .field-form {
+      padding:20px 20px 20px 30px;
+
+    }
+
+  }
+}
+
+#modal-edit-item{
+
+  .field-col{
+    height: calc(100vh - 250px);
+    overflow-y: scroll;
+  }
+
+  .settings-col{
+    height: calc(100vh - 250px);
+    overflow-y: scroll;
+
+    &.disabled {
+      opacity:0.4;
+      pointer-events: none !important;
+    }
+
+  }
+}

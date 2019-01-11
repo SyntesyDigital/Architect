@@ -1,0 +1,271 @@
+
+.page-bar{
+
+  position:fixed;
+  top:70px;
+  z-index: 800;
+  width:100%;
+  background-color: $cms-light-color-1;
+
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.15);
+  box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.15);
+  z-index:500;
+
+  .bnt-default{
+    background-color:$cms-light-color-1;
+
+  }
+
+  .actions-dropdown{
+    display: inline-block;
+    position: relative;
+
+    .btn {
+      padding-right: 20px;
+
+      .caret{
+        margin-left: 6px;
+      }
+    }
+  }
+
+
+  h1{
+    @include font(20,60,400);
+    display: inline-block;
+    margin:0;
+    padding-left: 20px;
+  }
+
+  .btn-default.btn-close {
+    background-color: transparent;
+    height: 63px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    border-radius: 0px;
+
+    i.fa{
+      font-size:30px !important;
+      color: #b0b0b0;
+      font-weight: 700;
+    }
+
+  }
+
+  .dropdown-menu li a:hover, .dropdown-menu li a:focus, .dropdown-menu li a:active{
+    background-color:$cms-light-color-3;
+    color:$text-color;
+    box-shadow: none;
+  }
+
+}
+
+
+.rightbar-page{
+
+  .page-content {
+
+    padding-top:90px;
+
+    .fields-list-container{
+      /*background-color: #fafafa;*/
+      border:1px dashed #ccc;
+      padding:15px;
+
+      width: 100%;
+      text-align: center;
+      margin-bottom:40px;
+
+      &.error {
+          border: 1px dashed $red !important;
+      }
+
+      .list-container-content-wrapper{
+        display: block;
+        display: table;
+        width: 100%;
+        height: 40vh;
+      }
+
+      .list-container-content{
+        display: table-cell;
+        vertical-align: middle;
+        @include font(16,20,400);
+        color:#aaa;
+        width:100%;
+        height:100%;
+      }
+
+      &.can-drop {
+        background-color:#fafafa;
+      }
+
+      &.is-active {
+        background-color:#fafafa;
+        border:1px dashed $cms-color-1;
+
+        .list-container-content{
+            color:$cms-color-1;
+        }
+      }
+
+    }
+
+    .typology-field {
+      border:1px solid #ccc;
+      position:relative;
+      height:50px;
+      overflow: hidden;
+      margin-bottom:15px;
+      background-color: #fafafa;
+      @include round(6px);
+
+      .form-group .form-control, .form-group .cke_textarea_inline{
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        padding : 0 10px;
+      }
+
+      .field-type {
+        display: inline-block;
+        width:150px;
+        position:absolute;
+        top: 0px;
+        left: 0px;
+
+        @include font(14,50,500);
+        padding-left:45px;
+        border-right: 1px solid #ccc;
+
+        &.is-title{
+          background-color:#e0e0e0;
+        }
+
+        i.fa{
+          position:absolute;
+          top: 12px;
+          left: 18px;
+          font-size: 22px;
+          padding-right: 10px;
+          color:#b4b4b4;
+        }
+
+      }
+
+      .field-inputs {
+        position:relative;
+        padding-left:160px;
+        padding-right:200px;
+        padding-top: 2px;
+      }
+
+      .remove-field-btn{
+        color:$brand-danger;
+      }
+
+      .field-name {
+
+      }
+
+      .field-id {
+
+      }
+
+      .field-actions {
+        position: absolute;
+        top:0px;
+        right:0px;
+        width: 180px;
+
+        a{
+          @include font(12,50,400);
+          display: inline-block;
+        }
+
+
+      }
+
+    }
+
+  }
+
+  .sidebar{
+
+    z-index:400;
+
+    border-left:1px solid #ccc;
+    position: fixed;
+    width:25%;
+    top:0px;
+    right:0px;
+    padding:20px;
+    margin-top: 135px;
+    height: calc(100vh - 110px);
+    overflow: scroll;
+
+
+  }
+
+  .form-group .form-control, .form-group .cke_textarea_inline{
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    padding : 0 10px;
+    background-color: #fafafa;
+  }
+
+  .form-group{
+    margin: 0px;
+  }
+
+  .togglebutton {
+    padding: 2px 0;
+
+    label{
+      width:100%;
+    }
+    .toggle{
+      float:right;
+    }
+  }
+
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+
+  h3{
+    @include font(14,24,400);
+    text-transform:uppercase;
+
+  }
+
+  .field-list{
+    .field {
+      border: 1px solid #ccc;
+      padding: 10px 16px;
+      margin-bottom: 5px;
+      @include font(14,24,500);
+      background-color: #fafafa;
+      padding-left:60px;
+      @include round(6px);
+      cursor: 'move';
+
+      i.fa{
+        position:absolute;
+        top: 12px;
+        left: 23px;
+        font-size: 22px;
+        padding-right: 10px;
+        color:#b4b4b4;
+      }
+
+    }
+  }
+
+}

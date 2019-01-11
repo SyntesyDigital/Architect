@@ -1,0 +1,237 @@
+
+
+.leftbar-page {
+
+  .page-content {
+
+    padding-top: 20px;
+    padding-bottom:60px;
+
+    h3{
+      display: inline-block;
+      vertical-align: top;
+      padding-right: 20px;
+      margin: 14px 0;
+    }
+    a {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .fields-list-container{
+      /*background-color: #fafafa;*/
+      border:1px dashed #ccc;
+      padding:15px;
+
+      width: 100%;
+      text-align: center;
+      margin-bottom:40px;
+
+      .list-container-content-wrapper{
+        display: block;
+        display: table;
+        width: 100%;
+        height: 40vh;
+      }
+
+      .list-container-content{
+        display: table-cell;
+        vertical-align: middle;
+        @include font(16,20,400);
+        color:#aaa;
+        width:100%;
+        height:100%;
+      }
+
+      &.can-drop {
+        background-color:#fafafa;
+      }
+
+      &.is-active {
+        background-color:#fafafa;
+        border:1px dashed $cms-color-1;
+
+        .list-container-content{
+            color:$cms-color-1;
+        }
+      }
+
+    }
+
+    .typology-field {
+      border:1px solid #ccc;
+      position:relative;
+      height:50px;
+      overflow: hidden;
+      margin-bottom:15px;
+      background-color: #fafafa;
+      @include round(6px);
+
+      .form-group .form-control, .form-group .cke_textarea_inline{
+        border-top:none;
+        border-left:none;
+        border-right:none;
+        padding : 0 10px;
+      }
+
+      .field-type {
+        display: inline-block;
+        width:150px;
+        position:absolute;
+        top: 0px;
+        left: 0px;
+
+        @include font(14,50,500);
+        padding-left:45px;
+        border-right: 1px solid #ccc;
+
+        i.fa{
+          position:absolute;
+          top: 12px;
+          left: 18px;
+          font-size: 22px;
+          padding-right: 10px;
+          color:#b4b4b4;
+        }
+
+      }
+
+      .field-inputs {
+        position:relative;
+        padding-left:160px;
+        padding-right:200px;
+        padding-top: 2px;
+      }
+
+      .remove-field-btn{
+        color:$brand-danger;
+      }
+
+      .field-name {
+
+      }
+
+      .field-id {
+
+      }
+
+      .field-actions {
+        position: absolute;
+        top:0px;
+        right:0px;
+        width: 180px;
+
+        a{
+          @include font(12,50,400);
+          display: inline-block;
+        }
+
+
+      }
+
+    }
+
+  }
+
+  .sidebar{
+
+    z-index:100;
+
+    border-right:1px solid #ccc;
+    position: fixed;
+    width: 16.7%;
+    top:0px;
+    left:0px;
+    padding:20px;
+    margin-top: 70px;
+    height: calc(100vh - 70px);
+    overflow-y: scroll;
+    background-color: $cms-light-color-6;
+
+    padding:20px 0;
+
+    ul{
+
+      padding-left:0px;
+
+      li{
+        list-style-type: none;
+
+        a{
+          display: block;
+          border-left: 3px solid transparent;
+          padding-left: 35px;
+          color:$text-color;
+          @extend .animate;
+
+
+          i{
+            font-size: 20px;
+            padding-right: 10px;
+            line-height: 40px;
+            color: #a0a6a9;
+            @extend .animate;
+          }
+
+          .text{
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 40px;
+            display: inline-block;
+            vertical-align: top;
+            @extend .animate;
+          }
+        }
+
+        &:hover, &.active{
+
+          a{
+            border-left: 3px solid $brand-primary;
+            background-color:#c1c7ce;
+          }
+
+          i{
+            color:$brand-primary;
+          }
+
+          .text{
+            color:$cms-dark-color-1;
+          }
+
+        }
+      }
+    }
+
+  }
+
+  .form-group .form-control, .form-group .cke_textarea_inline{
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    padding : 0 10px;
+    background-color: #fafafa;
+  }
+
+  .form-group{
+    margin: 0px;
+  }
+
+  .togglebutton {
+    padding: 2px 0;
+
+    label{
+      width:100%;
+    }
+    .toggle{
+      float:right;
+    }
+  }
+
+  hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+
+}

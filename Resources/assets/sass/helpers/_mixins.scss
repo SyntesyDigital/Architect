@@ -1,0 +1,78 @@
+
+@mixin animate($seconds) {
+    -webkit-transition: all $seconds ease;
+    -moz-transition: all $seconds ease;
+    -o-transition: all $seconds ease;
+    transition: all $seconds ease;
+}
+@mixin font($font-size, $line-height, $font-weight) {
+    font-size: unquote($font-size + 'px');
+    line-height: unquote($line-height + 'px');
+    font-weight: $font-weight;
+}
+@mixin picto($btop, $bleft, $width, $height) {
+    content: ' ';
+    background-image: url("../images/assets.png");
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: unquote($width + 'px');
+    height: unquote($height + 'px');
+    background-position: unquote('-'+$btop + 'px') unquote('-'+$bleft + 'px');
+}
+@mixin asset($btop, $bleft, $width, $height) {
+    display: inline-block;
+    background-image: url("../images/assets.png");
+    width: unquote($width + 'px');
+    height: unquote($height + 'px');
+    background-position: unquote('-'+$btop + 'px') unquote('-'+$bleft + 'px');
+}
+@mixin fw-icon($code) {
+    font-family: FontAwesome;
+    content: $code;
+}
+
+@mixin scale($value) {
+    -ms-transform: scale($value, $value);
+    /* IE 9 */
+    -webkit-transform: scale($value, $value);
+    /* Safari */
+    transform: scale($value, $value);
+}
+@mixin round($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin rounded-right($radius) {
+  -webkit-border-top-left-radius: $radius;
+  -webkit-border-bottom-left-radius: $radius;
+  -moz-border-radius-topleft: $radius;
+  -moz-border-radius-bottomleft: $radius;
+  border-top-left-radius: $radius;
+  border-bottom-left-radius: $radius;
+}
+
+@mixin rounded-left($radius) {
+  -webkit-border-top-right-radius: 18px;
+  -webkit-border-bottom-right-radius: 18px;
+  -moz-border-radius-topright: 18px;
+  -moz-border-radius-bottomright: 18px;
+  border-top-right-radius: 18px;
+  border-bottom-right-radius: 18px;
+}
+
+@mixin placeholder($color,$font-size) {
+  .form-control::-webkit-input-placeholder { color: $color; font-size:unquote($font-size + 'px');}  /* WebKit, Blink, Edge */
+  .form-control:-moz-placeholder { color: $color; font-size:unquote($font-size + 'px');}  /* Mozilla Firefox 4 to 18 */
+  .form-control::-moz-placeholder { color: $color; font-size:unquote($font-size + 'px');}  /* Mozilla Firefox 19+ */
+  .form-control:-ms-input-placeholder { color: $color; font-size:unquote($font-size + 'px');}  /* Internet Explorer 10-11 */
+  .form-control::-ms-input-placeholder { color: $color; font-size:unquote($font-size + 'px');}  /* Microsoft Edge */
+}
+
+@mixin rotate($degrees) {
+  -ms-transform: rotate($degrees); /* IE 9 */
+  -webkit-transform: rotate($degrees); /* Chrome, Safari, Opera */
+  transform: rotate($degrees);
+}

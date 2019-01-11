@@ -1,0 +1,35 @@
+.dataTables_wrapper{
+  .form-group.form-group-sm{
+    margin-top:0px;
+  }
+
+  .form-group.form-group-sm .form-control, .form-group.form-group-sm .cke_textarea_inline{
+    @include font(14,18,400);
+
+  }
+}
+
+.table.dataTable {
+
+  td:last-child{
+    text-align: right;
+  }
+
+  .btn.btn-link {
+      padding:0px;
+  }
+
+  .thumbnail{
+    margin-bottom:0px;
+  }
+
+  a.title{
+    color:$text-color;
+    font-weight: 100;
+  }
+
+}
+
+.table > thead > tr > th, .table > thead > tr > td, .table > tbody > tr > th, .table > tbody > tr > td, .table > tfoot > tr > th, .table > tfoot > tr > td{
+  vertical-align: middle;
+}

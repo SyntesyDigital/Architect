@@ -1,0 +1,58 @@
+
+// Body
+$body-bg: #eef5f9;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// Brands
+$brand-primary: #4a9fea;
+$brand-info:  #7460ee;
+$brand-success: #47daa4;
+$brand-warning: #ffb22b;
+$brand-danger: #fc4b6c;
+$brand-default: #fff;
+
+// Typography
+$font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #455660;
+
+// Navbar
+$navbar-default-bg: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+
+
+// Layout colors
+$cms-light-color-1: #f2f2f2;  //main gray
+$cms-light-color-2 : #fefefe; //heder gray
+$cms-light-color-3 : #eaeef0; //heder gray tables
+$cms-light-color-4 : #d5dadc; //border buttons
+$cms-light-color-5 : #fafafa; //input background
+$cms-light-color-6 : #dadada; //background sidebar
+
+$cms-dark-color-1 : #37474f; //menu text dark
+$cms-dark-color-2 : #6b6e73; //menu text
+$cms-dark-color-3 : #969696; //menu text
+
+$cms-color-1 : #5b9fef; //blue
+
+$cms-dark-color-1 : #273544;
+$cms-dark-color-2 : #192532;
+$cms-dark-color-3 : #2d2f31;

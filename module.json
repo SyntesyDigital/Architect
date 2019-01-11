@@ -1,0 +1,16 @@
+{
+    "name": "Architect",
+    "alias": "architect",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Architect\\Providers\\ArchitectServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}

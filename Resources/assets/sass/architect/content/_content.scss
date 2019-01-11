@@ -1,0 +1,347 @@
+.content{
+
+  .tag-manager {
+    .tags{
+      padding-top:10px;
+    }
+  }
+
+  .react-autosuggest__suggestions-container--open {
+      display: block;
+      position: absolute;
+      top: 38px;
+      width: 100%;
+      border: none;
+      background-color: $cms-light-color-5;
+      @include font(14,16,300);
+      border-bottom-left-radius: 4px;
+      border-bottom-right-radius: 4px;
+      z-index: 2;
+      max-height: 40vh;
+      overflow-y: hidden;
+      @extend .box-shadow;
+  }
+
+  .react-autosuggest__suggestion--highlighted {
+      background-color: $cms-light-color-1;
+      color:$cms-color-1;
+  }
+
+  .publish-form{
+
+      .btn{
+        width:100%;
+      }
+  }
+
+  p.field-help{
+
+  }
+
+  .sidebar-item{
+    padding:10px 0;
+  }
+
+  .sidebar {
+    padding-bottom:50px;
+  }
+
+  /*
+  .input-button{
+    position: absolute;
+    z-index:100;
+    right: 0px;
+    top:0px;
+    display: inline-block;
+
+  }
+  */
+
+  .tags{
+    .tag{
+      margin-right: 15px;
+
+      i.fa{
+        font-size:18px;
+      }
+
+      i.fa:hover{
+        @extend .text-danger;
+      }
+    }
+  }
+
+  .field-group {
+    .field-item {
+      border-left:2px solid #ccc;
+      margin-bottom: 20px;
+
+      .field-name{
+        line-height: 45px;
+        text-align: left;
+        padding-left: 30px;
+      }
+
+
+      button.btn,div.btn{
+
+        display: block;
+        width: 100%;
+        text-align: left;
+        border: 1px solid #ccc;
+        border-radius: 0px !important;
+        background-color: $cms-light-color-6;
+        text-decoration: none;
+        margin: 0;
+
+        &:not(.collapsed):before {
+            content: "▾";
+            margin-right: 0px;
+            position: absolute;
+            top: 9px;
+            right: 19px;
+            font-size: 18px;
+            color:$text-color;
+        }
+        &.collapsed:before {
+            content: "▸";
+            margin-right: 0px;
+            position: absolute;
+            top: 9px;
+            right: 19px;
+            font-size: 18px;
+            color:$text-color;
+        }
+
+        .field-type{
+          i{
+            position: relative;
+            font-size: 22px;
+            padding-right: 10px;
+            color: #a0a6a9;
+          }
+
+          color: #a0a6a9;
+          text-transform: capitalize;
+
+          padding-right: 10px;
+          border-right:1px solid #ccc;
+        }
+
+        .field-name {
+          color:$text-color;
+          padding-left: 10px;
+          text-transform: capitalize;
+          @include font(18,20,400);
+        }
+
+      }
+
+      .ql-editor{
+        min-height:100px;
+        max-height:100vh;
+      }
+
+      .field-form {
+        padding:20px 20px 20px 30px;
+
+      }
+
+    }
+  }
+
+  .ql-container.ql-snow{
+    background-color: $cms-light-color-5;
+  }
+
+  /** IMAGES AND IMAGES **/
+
+  .image-field-container {
+
+    text-align: center;
+
+    .image-field{
+      height: 180px;
+      width: 200px;
+      border: 1px dashed #ccc;
+      margin:0 auto;
+      /*background-color:$cms-light-color-5;*/
+
+
+
+    }
+
+    .image{
+      height:100%;
+      width:100%;
+      background-size: contain;
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: center;
+      position: absolute;
+      top:0px;
+      left:0px;
+      z-index: 10;
+    }
+
+    .add-button{
+      padding-top:60px;
+      z-index: 20;
+    }
+
+    .field-help{
+        padding-top:10px;
+    }
+
+    &.images-gallery{
+
+      text-align: left;
+
+      .image-field{
+        display: inline-block;
+        margin: 10px 10px;
+        text-align: center;
+      }
+
+      a.btn.btn-link{
+        position: absolute;
+        top: -30px;
+        right: -22px;
+        z-index: 100;
+
+        i.fa{
+          font-size:25px;
+
+
+        }
+
+        &:hover{
+          i.fa{
+            color: $brand-danger;
+          }
+        }
+
+      }
+    }
+
+  }
+
+  /** DATE  **/
+
+  .field-form .toggle{
+    float:none;
+    margin-left: 30px;
+  }
+
+  /** DATE  **/
+
+  .react-datepicker-popper{
+      z-index:1000;
+  }
+
+  .react-datepicker-wrapper{
+      display:block;
+      font-family: $font-family-sans-serif;
+
+      .react-datepicker__input-container{
+        display:block;
+      }
+
+
+  }
+
+  .react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name{
+    @include font(12,30,300);
+    font-family: $font-family-sans-serif;
+    width: 30px;
+  }
+
+  .react-datepicker__current-month, .react-datepicker-time__header{
+    @include font(12,20,400);
+    font-family: $font-family-sans-serif;
+  }
+
+  .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list{
+    padding:0px;
+    @include font(12,20,300);
+    font-family: $font-family-sans-serif;
+  }
+
+  .react-datepicker__time-container{
+    width:90px;
+  }
+
+  .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box{
+    width:90px;
+  }
+
+  .react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range{
+    background-color:$cms-color-1;
+  }
+
+  .react-datepicker__day--selected:hover, .react-datepicker__day--in-selecting-range:hover, .react-datepicker__day--in-range:hover{
+    background-color:$cms-color-1;
+  }
+
+  .react-datepicker__time-container .react-datepicker__time .react-datepicker__time-box ul.react-datepicker__time-list li.react-datepicker__time-list-item--selected{
+    background-color:$cms-color-1;
+  }
+
+  .react-datepicker__navigation--next--with-time:not(.react-datepicker__navigation--next--with-today-button){
+    right: 100px;
+  }
+
+
+  /**** Contents *****/
+  .contents-field {
+
+    .fields-list-container{
+        border:none;
+        margin-bottom: 0px;
+        padding-bottom:0px !important;
+    }
+
+    .add-content-button {
+      border: 1px dashed #ccc;
+      padding: 0 20px;
+      margin-left: 20px;
+      text-align: center;
+      margin-right: 20px;
+    }
+
+    .field-type{
+      font-weight:300 !important;
+      color: #b4b4b4 !important;
+      text-align: left;
+    }
+
+    .field-inputs .field-name{
+      line-height: 45px;
+      text-align: left;
+      padding-left: 30px;
+    }
+
+
+    &.images-field {
+      .image {
+        width: 51px;
+        height: 40px;
+        background-size: cover;
+        position: absolute;
+        top: 5px;
+        left: 155px;
+      }
+
+      .field-name {
+        padding-left:60px;
+      }
+    }
+
+
+  }
+
+  .table-contents {
+    width:100%;
+  }
+
+}

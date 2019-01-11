@@ -1,0 +1,30 @@
+.translated-file {
+  display: inline-block;
+  padding:10px;
+
+  a.btn.btn-link {
+    padding: 12px 0px;
+  }
+
+}
+
+.key-value-field {
+  &.row {
+    margin-left:12px;
+    margin-right:12px;
+  }
+
+  .col {
+    padding-left:7px;
+    padding-right:7px;
+  }
+
+  .remove-field-btn{
+    line-height: 32px;
+  }
+
+}
+
+.ql-editor p{
+  padding-bottom: 10px !important;
+}

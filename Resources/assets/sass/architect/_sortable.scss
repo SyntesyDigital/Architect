@@ -1,0 +1,171 @@
+
+body.dragging, body.dragging {
+  cursor: move !important;
+}
+
+ol.sortable-list {
+
+  list-style-type: none;
+  margin: 0;
+  min-height: 10px;
+  padding-left: 0px;
+
+  li{
+    display: block;
+    margin: 5px;
+    padding: 0px 10px 0 10px;
+
+    min-height: 50px;
+
+    .item-bar {
+      color: $text-color;
+      border:1px solid #ccc;
+      background-color: #fafafa;
+      @include round(6px);
+      min-height: 50px;
+      width:50vw;
+      padding-left: 40px;
+
+      /*
+      &:before{
+        content: "\25BE";
+        margin-right: 0px;
+        position: absolute;
+        top: -2px;
+        left: 16px;
+        font-size: 18px;
+        color: #a0a0a0;
+      }
+
+      &.collapsed {
+        &:before{
+          content: "\25B8";
+        }
+      }
+      */
+
+    }
+
+    &.placeholder {
+      border:1px dashed $brand-primary;
+      background-color:transparent;
+      width:50vw;
+      margin-left:15px;
+    }
+
+    &.drag{
+      pointer-events:auto;
+      line-height: 48px;
+      color: $text-color;
+
+      i{
+        color:#b4b4b4;
+      }
+
+    }
+
+    &.no-drag{
+      pointer-events:none;
+      color:$cms-dark-color-1;
+      background-color:transparent;
+    }
+
+    .actions{
+      float:right;
+      line-height: 34px;
+      height:30px;
+      padding-right:20px;
+
+      a.btn-link {
+        padding: 4px;
+      }
+    }
+
+
+
+    a.btn.btn-link{
+
+      color:$brand-primary;
+
+      i.fa {
+        color:$brand-primary;
+      }
+
+      &.text-danger{
+        color:$brand-danger;
+
+        i.fa {
+          color:$brand-danger;
+        }
+      }
+    }
+  }
+
+}
+
+/**
+body.dragging, body.dragging {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  top: 0;
+  opacity: .5;
+  z-index: 2000;
+}
+
+ol.vertical {
+  margin: 0 0 9px 0;
+  min-height: 10px;
+
+  li {
+    display: block;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #CCC;
+    color: $cms-color-1;
+    background: $cms-light-color-2;
+  }
+
+  li.placeholder {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    border: none;
+
+
+    &:before {
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      margin-top: -5px;
+      left: -5px;
+      top: -4px;
+      border: 5px solid transparent;
+      border-left-color: #f00;
+      border-right: none;
+    }
+  }
+}
+*/
+
+body.dragging, body.dragging * {
+  cursor: move !important;
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+ol.example li.placeholder {
+  position: relative;
+  /** More li styles **/
+}
+ol.example li.placeholder:before {
+  position: absolute;
+  /** Define arrowhead **/
+}

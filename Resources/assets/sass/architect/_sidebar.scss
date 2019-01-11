@@ -1,0 +1,140 @@
+aside.sidebar {
+    width: $sidebar-width;
+    position: fixed;
+    height: 100%;
+    background-color: #fff;
+    z-index: 100;
+    -webkit-box-shadow: 0 0 50px 0 rgba(0,0,0,0.15);
+    -moz-box-shadow: 0 0 50px 0 rgba(0,0,0,0.15);
+    box-shadow: 0 0 50px 0 rgba(0,0,0,0.15);
+
+    nav {
+        .logo {
+            img {
+                max-width: 80%;
+                margin: 0 auto;
+                display: block;
+                width: 80%;
+            }
+        }
+
+        ul {
+            margin-left: 0;
+            padding-left: 0;
+
+            li {
+                a {
+                    color: $cms-dark-color-2;
+                    display: block;
+                    vertical-align: top;
+                    padding: 0;
+                    margin: 0;
+                    text-decoration: none;
+                    width: 100%;
+                    padding-left: 35px;
+                    border-left: 3px solid transparent;
+
+                    .text {
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        font-size: 12px;
+                        line-height: 50px;
+                        display: inline-block;
+                        vertical-align: top;
+                    }
+
+                    &:active,
+                    &:focus {
+                        background-color: transparent;
+                    }
+
+                    i {
+                        font-size: 22px;
+                        padding-right: 10px;
+                        line-height: 50px;
+                    }
+
+                    &:hover {
+                        background-color: $cms-light-color-1;
+                        border-left: 3px solid $cms-color-1;
+
+                        .text {
+                            color: $cms-dark-color-1;
+                        }
+
+                        i {
+                            color: $cms-color-1;
+                        }
+                    }
+                }
+
+                &.active {
+                    a {
+                        border-left: 3px solid $cms-color-1;
+                        background-color: transparent;
+
+                        .text {
+                            color: $cms-dark-color-1;
+                        }
+
+                        i {
+                            color: $cms-color-1;
+                        }
+                    }
+                }
+
+                ul.nav-stacked {
+                    background-color: $cms-light-color-1;
+
+                    li {
+                        &:first-child {
+                            padding-top: 8px;
+                        }
+
+                        &:last-child {
+                            padding-bottom: 15px;
+                        }
+
+                        a {
+                            padding-left: 50px;
+                            border-left: none;
+                            border-left: 3px solid transparent;
+
+                            i {
+                                font-size: 16px;
+                                line-height: 35px;
+                                color: $cms-dark-color-2;
+                            }
+
+                            .text {
+                                font-size: 11px;
+                                line-height: 35px;
+                                display: inline;
+                                color: $cms-dark-color-2;
+                            }
+
+                            &:hover {
+                                background-color: $cms-light-color-1;
+                            }
+                        }
+
+                        &.active,
+                        &:hover {
+                            a {
+                                border-left: 3px solid $cms-color-1;
+
+                                .text {
+                                    color: $cms-dark-color-1;
+                                }
+
+                                i {
+                                    color: $cms-color-1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
